@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""Landing page of Starbuks to promote its coffee products.>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Images/logo.png" alt="Starbucks Logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks!</span></h2>
+                <p>Desfrute de uma experiência única com o café Starbucks. Feito com os melhores 
+                    grãos, cada xícara oferece um sabor rico e encorpado, perfeito para qualquer 
+                    momento do seu dia. Descubra a combinação ideal de aromas e texturas que só a 
+                    Starbucks pode oferecer. Seja no conforto de sua casa ou em nossas lojas, 
+                    nosso café é a escolha certa para quem busca qualidade e excelência em cada 
+                    gole!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="Images/img1.png" alt="Starbucks Coffee" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="Images/thumb1.png" onclick="imgSlider('Images/img1.png'); 
+            changeCircleColor('#017143'); this.classList.add('active')"></li>
+
+            <li><img src="Images/thumb2.png" onclick="imgSlider('Images/img2.png'); 
+            changeCircleColor('#eb7495'); this.classList.add('active')"></li>
+            
+            <li><img src="Images/thumb3.png" onclick="imgSlider('Images/img3.png'); 
+            changeCircleColor('#d752b1'); this.classList.add('active')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="Images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="Images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="Images/twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Starbucks').src = anything;
+            document.querySelectorAll('.thumb li img').forEach(img => img.classList.remove('active'));
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
