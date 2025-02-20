@@ -3,7 +3,7 @@
     <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 
-# Welcome to my **Landing Pages** repository! 
+# Welcome to my **Landing Pages** Repository! 
 
 This repository showcases a collection of landing pages that I have turn into code to improve my skills in web design.
 
